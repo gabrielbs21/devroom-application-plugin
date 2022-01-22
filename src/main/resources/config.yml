@@ -1,0 +1,28 @@
+database:
+  sql:
+    type: "sqlite" # "sqlite" or "mysql"
+    mysql:
+      address: "localhost:3306"
+      username: "root"
+      password: ""
+      database: "test"
+    sqlite:
+      file: "database/database.db"
+
+# all in seconds
+broadcast-grave-location-after: 300
+delete-grave-after: 600
+send-location-message: 60
+
+messages:
+  grave-location-broadcast: "&a{player}'s grave location is -> X: {x}, Y: {y}, Z: {z}"
+  wrong-grave: "&7This grave does not belong to you, therefore you need the &cDeath Key"
+  death-key-used: "&aYou opened {player}'s grave using a &cDeath Key&a!"
+  grave-opened: "&aYour grave has been successfully opened! Your items have been recovered."
+  grave-generated-repeating-message: "&aA grave has been generated at the site of his death! (X: {x}, Y: {y}, Z: {z})"
+  grave-deleted: "&cYour grave was deleted because you didn't open it in time!"
+  # 4 lines max
+  grave-sign:
+    - "This grave"
+    - "belongs to:"
+    - "{player}"

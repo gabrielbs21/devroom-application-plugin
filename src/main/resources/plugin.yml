@@ -1,0 +1,4 @@
+name: Sepultures
+version: '1.0.0'
+main: me.gabrielsantos.projects.devroom.Sepultures
+api-version: 1.18
